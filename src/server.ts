@@ -29,7 +29,7 @@ app.post("/slack/chart", (req, res) => {
             return
         }
         const ticker_param = get(argv._, 0, "")
-        const candle_param = get(argv._, 1, "")
+        const candle_param = get(argv._, 1, "daily")
 
         const validated = [
             VALIDATORS.TICKER(ticker_param),
