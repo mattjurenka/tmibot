@@ -2,7 +2,7 @@
   "name": "tmibot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/server.js",
   "scripts": {
     "clean": "rm -rf build",
     "start": "node --max-old-space-size=512 build/server.js",

@@ -47,14 +47,10 @@ app.post("/slack/chart", (req, res) => {
         }
         
         const [ticker, tf] = validated.map(val => val["param"])
-
-        if (err) {
-        } else { 
-            res.json({
-                "response_type": "in_channel",
-                blocks: get_chart_blocks(ticker, tf)
-            });
-        }
+        res.json({
+            "response_type": "in_channel",
+            blocks: get_chart_blocks(ticker, tf)
+        });
     })
 })
 
